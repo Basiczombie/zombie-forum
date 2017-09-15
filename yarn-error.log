@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js init
+
+PATH: 
+  /home/basiczombie/projects/forum/throne/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.0.1
+
+Node version: 
+  4.7.2
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "zombie-forum",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Basiczombie/zombie-forum.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Basiczombie/zombie-forum/issues"
+    },
+    "homepage": "https://github.com/Basiczombie/zombie-forum#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:115284:13)
+      at emitNone (events.js:67:13)
+      at Interface.emit (events.js:166:7)
+      at Interface._ttyWrite (readline.js:692:16)
+      at ReadStream.onkeypress (readline.js:107:10)
+      at emitTwo (events.js:87:13)
+      at ReadStream.emit (events.js:172:7)
+      at emitKeys (readline.js:1277:14)
+      at next (native)
+      at ReadStream.onData (readline.js:932:36)
