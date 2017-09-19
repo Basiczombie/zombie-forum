@@ -17,19 +17,26 @@ DEBUG_TOOLBAR_CONFIG = {
     'JQUERY_URL': '',
 }
 
+LOGGING_CONFIG = None
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
-        },
+            'stream': sys.stdout,
+        }
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG'
     },
     'loggers': {
-        'django': {
+        'werkzeug': {
             'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'level': 'DEBUG',
+            'propagate': True,
         },
     },
 }
+logging.config.dictConfig(LOGGING)
 DJANGO_LOG_LEVEL = DEBUG
